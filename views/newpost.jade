@@ -1,0 +1,17 @@
+html
+head 
+	script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+body
+	h1 Post your comment! 
+//WATCH OUT FOR SPACES OR INDENTS, THE WHOLE DOCUMENT MUST USE ONE OR ANOTHER, GEEN COMBOS !
+
+form(method ="post", action ="/messagedata")
+	p
+	input(type="text",name="title",id="title" autocomplete="off",placeholder="Give your post a title...")
+	p  
+	input(type="text",name="content",id="content",placeholder="Type your message here...", size="40")
+	p
+	input(type="submit")
+
+li
+		a(href='/view')	Go to message list
